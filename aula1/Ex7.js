@@ -7,7 +7,7 @@ let PrimeiroValor = 10;/* declarando valor da variavel*/
 let SegundoValor = 10;
 let TerceiroValor = "10";
 
-PrimeiroValor = 15;/*com o let conseguimos atribuir outro valor mesmo que o valor ja tenha sido declarado*/
+PrimeiroValor = 15;
 
 console.log(PrimeiroValor);
 
