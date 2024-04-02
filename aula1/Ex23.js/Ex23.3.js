@@ -12,11 +12,16 @@
        
         const resultado = document.querySelector(".resultado");
 
-        const pessoas = [];
+               
+       form.addEventListener('submit', recebeEventoForm);/*estamos falando para form.adicionar um escutador de eventos,
+       ficando form.addEventListener, e dentro iremos colocar qual evento queremos escutar que é o evento de submit
+       e isso vai receber uma função recebeEventoForm */
 
-      function recebeEventoForm (evento){
+        const pessoas = [];//vetor que começa na posição 0
 
-        evento.preventDefault();
+      function recebeEventoForm (evento){// criando a função que receber o parametro evento
+
+        evento.preventDefault();//comando para previnir que o navegador atualize, estamos falando para ele previnir o que aconetece por padrao.
        
         const nome = form.querySelector(".nome");
         const sobrenome = form.querySelector(".sobrenome");
@@ -29,20 +34,14 @@
             peso: peso.value,
             altura: altura.value
         });
-
+        
+        console.log(pessoas);
 
         resultado.innerHTML += `<p> ${nome.value} ${sobrenome.value} ${peso.value} ${altura.value} </p>`;/*mostrando na tela*/
 
       };
-
-
-
        
-       form.addEventListener('submit', recebeEventoForm);/*estamos falando para form.adicionar um escutador de eventos,
-       ficando form.addEventListener, e dentro iremos colocar qual evento queremos escutar que é o evento de submit
-       e isso vai receber uma função recebeEventoForm */
-       
-       };
+    };
        
        meuEscopo();//chamando função
        
