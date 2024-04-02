@@ -1,7 +1,7 @@
 
-## Aula 1 - Primeiros contatos com JAVASCRIPT.
+# Aula 1 - Primeiros contatos com JAVASCRIPT.
 
-# aqui é explicado um pouco sobre:
+## aqui é explicado um pouco sobre:
 
 configurações de ambiente(para começar a desenvolver).
 
