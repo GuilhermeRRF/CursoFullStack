@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+}
+
+body{
+    background-color: rgb(59, 59, 59);
+}
+
+.titulo{
+    margin: 10px auto;
+}
+
+.container{
+    max-width: 640px;
+    margin: 30px auto;
+    background-color: rgb(233, 233, 233);
+    padding: 20px;
+    font-family: "Open sans", sans-serif ;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    border-radius: 10px;
+}
+
+form input, form label, form button{
+    display: block;
+    width:100% ;
+    margin-bottom:10px;
+    margin-top: 20px;
+}
+
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+
+    outline: 1px solid black;
+    
+}
+
+form button{
+    border: none;
+    background-color: rgb(7, 7, 7);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+form button:hover{
+    background-color: rgb(30, 0, 49);
+}
+
+.paragrafo-resultado {
+    background-color: rgb(98, 218, 98);
+    color: white; /* Para melhor contraste */
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.bad{
+    background-color: rgb(218, 82, 82);
+}
+
+
+.Texto_Acima{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+}
+
+.bloco{
+    width: 35%;
+}
+
+.bloco2{
+    width: 35%;
+}
+
+.mintexto{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
