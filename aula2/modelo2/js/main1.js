@@ -12,6 +12,8 @@
 
     const form = document.querySelector(".form");//selecionando formulario
 
+    //Essa função vai capturar o eventos, fazer a função de erro se nenhum valor for inserido e mostrar na tela 
+
 
     form.addEventListener('submit', function(e){//escolho primeiro o evento que qro escuta e adiciono uma função que captura o evento q esta como "e"
 
@@ -30,6 +32,7 @@
         const altura = Number(inputAltura.value);
 
         console.log(peso,altura)
+
         
         if(!peso){//se o peso for invalido for um NaN, então 
             
@@ -57,12 +60,12 @@
 
 
     function getNivelImc(imc){//criando lista com condições
-        const nivel = ['Abaixo do peso',
-         'Peso normal',
-         'Sobre peso',
-         'Obsidade grau 1',
-         'Obsidade grau 2',
-         'Obsidade grau 3'
+        const nivel = ['Abaixo do peso',//0
+         'Peso normal',//1
+         'Sobre peso',//2
+         'Obesidade grau 1',//3
+         'Obesidade grau 2',//4
+         'Obesidade grau 3'//5
         ];
 
         if(imc>= 39.9){//dica quando o if é muito pequeno e so tem uma linha podemos tirar as chave e deixar tudo em uma linha so
@@ -97,7 +100,7 @@
 function getImc(peso, altura){// calculo do imc
     const imc = peso/altura**2;
     return imc.toFixed(2);
-
+ 
 }
 
 
@@ -134,7 +137,7 @@ function getImc(peso, altura){// calculo do imc
 
         p.innerHTML = msg;
 
-        resultado.appendChild(p);
+        resultado.appendChild(p);//adiciona o p "paragrafo" no resultado
 
         /*resultado.innerHTML = msg;// a mensagem que eu mandar vai ir para o parametro msg e vai ser mostrado com innerHTML no html*/
 
