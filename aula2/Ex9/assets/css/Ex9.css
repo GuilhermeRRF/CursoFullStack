@@ -1,0 +1,25 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(30, 30, 85);
+}
+
+
+.hora{
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    color: white;
+    background-color: rgb(127, 136, 255);
+}
